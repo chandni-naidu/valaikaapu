@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RSVP: In Person - Chandni & William's Baby Celebration</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=League+Spartan:wght@100..900&family=Londrina+Sketch&family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page">
+
+  <a class="back-link" href="index.html">&larr; Back</a>
+
+  <main class="rsvp-standalone">
+    <form id="rsvp-in-person" class="rsvp-card" action="https://formspree.io/f/mykrgjbr" method="POST">
+      <h2>Valaikaapu (In Person)</h2>
+      <input type="hidden" name="event" value="In-Person - Valaikaapu">
+      <input type="hidden" name="_subject" value="RSVP: In-Person Valaikaapu">
+
+      <label>Name
+        <input type="text" name="name" required>
+      </label>
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+      <label>Attending?
+        <select name="attending" required>
+          <option value="">Select one</option>
+          <option value="Yes">Yes, I'll be there!</option>
+          <option value="No">Sorry, can't make it</option>
+        </select>
+      </label>
+      <label>Number of guests
+        <input type="number" name="guests" min="1" value="1">
+      </label>
+      <label>Message
+        <textarea name="message" rows="3" placeholder="Dietary restrictions, well wishes, anything else!"></textarea>
+      </label>
+
+      <button type="submit" class="rsvp-btn">Send RSVP</button>
+    </form>
+  </main>
+
+</div>
+
+</body>
+</html>

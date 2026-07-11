@@ -1,5 +1,5 @@
 :root {
-  --purple: #9b7ff0;
+  --purple: #b591ba;
   --blue: #4f8ef7;
   --teal: #45c9b8;
   --yellow: #fbd65b;
@@ -175,7 +175,7 @@ h2 {
 .rsvp-btn,
 .link-btn {
   display: inline-block;
-  background: var(--ink);
+  background: var(--purple);
   color: var(--white);
   text-decoration: none;
   padding: 0.65rem 1.5rem;
@@ -217,6 +217,76 @@ section h2 {
   margin: 0 0 0.25rem;
 }
 
+/* ---------- RSVP (standalone pages) ---------- */
+
+.back-link {
+  display: inline-block;
+  margin: 2rem 0 0 2rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  color: var(--ink);
+}
+
+.rsvp-standalone {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.rsvp-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.25rem 2rem;
+  text-align: left;
+  box-shadow: 0 12px 30px rgba(28, 29, 46, 0.06);
+}
+
+.rsvp-card h2 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0 0 1.25rem;
+}
+
+.rsvp-card label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.rsvp-card input,
+.rsvp-card select,
+.rsvp-card textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.rsvp-card textarea {
+  resize: vertical;
+}
+
+.rsvp-card .rsvp-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
 .section-sub {
   text-align: center;
   color: var(--muted);
@@ -241,10 +311,18 @@ section h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   color: var(--ink);
   font-size: 0.9rem;
   font-weight: 600;
   border-radius: 63% 37% 54% 46% / 55% 45% 55% 45%;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .blob-a {
