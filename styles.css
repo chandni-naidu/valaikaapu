@@ -1,5 +1,5 @@
 :root {
-  --purple: #539e86;
+  --purple: #407353;
   --blue: #4f8ef7;
   --teal: #45c9b8;
   --yellow: #fbd65b;
@@ -45,6 +45,14 @@ h2 {
   color: var(--muted);
   transform: rotate(-2deg);
   margin: 0 0 1rem;
+}
+
+.spacer-img {
+  display: block;
+  width: 240px;
+  max-width: 60%;
+  height: auto;
+  margin: 0 auto 1rem;
 }
 
 .names {
@@ -120,7 +128,7 @@ h2 {
   padding: 3rem;
   flex: 1 1 280px;
   max-width: 1200px;
-  min-height: 400px;
+  /* min-height: 400px; */
   box-shadow: 0 12px 30px rgba(28, 29, 46, 0.06);
   align-content: center;
   max-width: 400px;
@@ -130,10 +138,10 @@ h2 {
   background-image: url("Images/invite-bg.png");
   background-size: cover;
   background-position: center;
-  aspect-ratio: 1/2;
+  aspect-ratio: 1200 / 2000;
   min-height: 0;
   height: auto;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .icon-badge {
