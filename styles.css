@@ -1,5 +1,5 @@
 :root {
-  --purple: #b591ba;
+  --purple: #539e86;
   --blue: #4f8ef7;
   --teal: #45c9b8;
   --yellow: #fbd65b;
@@ -117,12 +117,23 @@ h2 {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 20px;
-  padding: 2.25rem 2rem 2rem;
+  padding: 3rem;
   flex: 1 1 280px;
-  max-width: 600px;
+  max-width: 1200px;
   min-height: 400px;
   box-shadow: 0 12px 30px rgba(28, 29, 46, 0.06);
   align-content: center;
+  max-width: 400px;
+}
+
+.detail-card--invite {
+  background-image: url("Images/invite-bg.png");
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1/2;
+  min-height: 0;
+  height: auto;
+  max-width: 600px;
 }
 
 .icon-badge {
@@ -164,7 +175,7 @@ h2 {
 
 .where {
   color: var(--muted);
-  margin: 0 0 1.5rem;
+  margin: 1.5rem 0 1.5rem 0;
 }
 
 .tbd {
