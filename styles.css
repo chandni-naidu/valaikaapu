@@ -2,7 +2,7 @@
   --purple: #407353;
   --blue: #4f8ef7;
   --teal: #45c9b8;
-  --yellow: #fbd65b;
+  --yellow: #d6c99d;
   --pink: #f98fc0;
   --white: #ffffff;
   --ink: #1c1d2e;
@@ -82,13 +82,13 @@ h2 {
 }
 
 .amp-bubble {
-  background: var(--purple);
-  color: var(--white);
+  /* background: var(--yellow); */
+  color: var(--ink);
   font-family: "Londrina Sketch", "Baloo Thambi 2", sans-serif;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 2rem;
   width: 2.4em;
-  height: 2.4em;
+  height: 1.4em;
   border-radius: 63% 37% 54% 46% / 55% 45% 55% 45%;
   display: flex;
   align-items: center;
@@ -168,6 +168,14 @@ h2 {
 
 .icon-orange {
   background: var(--yellow);
+}
+
+.tamil-title {
+  margin: 0 0 0.25rem;
+  font-family: "Baloo Thambi 2", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--purple);
 }
 
 .detail-card h2 {
