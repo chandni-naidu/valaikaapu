@@ -31,11 +31,35 @@ h2 {
   font-family: "Rubik Dirt", "Baloo 2", sans-serif;
 }
 
+/* ---------- Butterflies ---------- */
+
+.butterfly-img {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.butterfly-img--top {
+  margin-top: 1.5rem;
+}
+
+.butterfly-img--bottom {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .butterfly-img {
+    max-width: 150px;
+  }
+}
+
 /* ---------- Hero ---------- */
 
 .hero {
   text-align: center;
-  padding: 3.5rem 1.5rem 3rem;
+  padding: 1.5rem 1.5rem 3rem;
 }
 
 .eyebrow {
@@ -43,7 +67,7 @@ h2 {
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--muted);
-  transform: rotate(-2deg);
+  /* transform: rotate(-2deg); */
   margin: 0 0 1rem;
 }
 
@@ -73,12 +97,12 @@ h2 {
 
 .tilt-left {
   display: inline-block;
-  transform: rotate(-4deg);
+  /* transform: rotate(-4deg); */
 }
 
 .tilt-right {
   display: inline-block;
-  transform: rotate(3deg);
+  /* transform: rotate(3deg); */
 }
 
 .amp-bubble {
@@ -109,6 +133,21 @@ h2 {
   color: var(--muted);
   padding: 1rem 0 0;
   margin: 0 0 2.5rem;
+}
+
+.intro-text {
+  max-width: 400px;
+  margin: 0 auto 2.5rem;
+  text-align: left;
+}
+
+.intro-text p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+
+.intro-text p:last-child {
+  margin-bottom: 0;
 }
 
 .details {
