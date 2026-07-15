@@ -366,38 +366,48 @@ section h2 {
   padding: 1rem;
 }
 
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
-}
-
-.photo-frame {
-  aspect-ratio: 1 / 1;
+.photo-scatter {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  overflow: hidden;
-  color: var(--ink);
-  font-size: 0.9rem;
-  font-weight: 600;
-  border-radius: 63% 37% 54% 46% / 55% 45% 55% 45%;
+  gap: 1.75rem 1.25rem;
+  padding: 1.5rem 1rem;
 }
 
-.photo-frame img {
+.polaroid {
+  position: relative;
+  background: var(--white);
+  padding: 10px 10px 22px;
+  width: 160px;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(28, 29, 46, 0.15);
+  transform: rotate(var(--rot, 0deg));
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.06);
+  box-shadow: 0 16px 28px rgba(28, 29, 46, 0.22);
+  z-index: 2;
+}
+
+.polaroid img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
+  border-radius: 2px;
 }
 
-.blob-a {
-  background: rgba(79, 142, 247, 0.15);
-}
-
-.blob-b {
-  background: rgba(69, 201, 184, 0.18);
-  border-radius: 46% 54% 37% 63% / 45% 55% 45% 55%;
+.polaroid .tape {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 46px;
+  height: 18px;
+  background: rgba(214, 201, 157, 0.75);
+  border: 1px solid rgba(28, 29, 46, 0.05);
 }
 
 /* ---------- Links section ---------- */
