@@ -410,6 +410,12 @@ section h2 {
   border: 1px solid rgba(28, 29, 46, 0.05);
 }
 
+@media (max-width: 480px) {
+  .polaroid {
+    width: min(280px, 78%);
+  }
+}
+
 /* ---------- Links section ---------- */
 
 .links {
